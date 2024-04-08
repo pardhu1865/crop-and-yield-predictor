@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  background-image: url("images/pics/tea-plantation-2220475.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+
+  padding: 5%;
+}
+
+input[type="text"],
+select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  grid-column: span 4;
+  padding: 10px;
+  font-size: larger;
+  background-color: #459661;
+  color: #000000;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #25be90;
+}
+#result {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  grid-column: span 4;
+  text-align: center;
+  display: none;
+}
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid green;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#crop,
+#yield {
+  font-size: 24px;
+  color: green;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("images/pics/wheat-grass-6350274.jpg");
+
+  background-size: cover;
+  background-attachment: fixed;
+  /* This makes the background fixed while scrolling */
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  /* font-family: Arial, sans-serif; Change the font family if needed */
+}
+
+.foreground {
+  position: relative;
+  z-index: 1;
+  /* Ensure the foreground content appears above the background */
+  padding: 20px;
+  color: white;
+}
+
+/* Bubbles css   */
+.bubbles img {
+  width: 50px;
+  animation: bubble 4s linear infinite;
+}
+
+.bubbles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -80px;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+.bubbles img:nth-child(1) {
+  animation-delay: 2s;
+  width: 25px;
+}
+
+.bubbles img:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.bubbles img:nth-child(3) {
+  animation-delay: 3s;
+  width: 20px;
+}
+
+.bubbles img:nth-child(4) {
+  animation-delay: 4.5s;
+}
+
+.bubbles img:nth-child(5) {
+  animation-delay: 3s;
+  width: 30px;
+}
+
+.bubbles img:nth-child(6) {
+  animation-delay: 6s;
+}
+
+.bubbles img:nth-child(7) {
+  animation-delay: 7s;
+  width: 35px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
